@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Beginner</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Login Form -->
+    <div class="flex justify-center items-center h-screen">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-80">
+
+            <h2 class="text-2xl font-bold text-center mb-6">
+                Login
+            </h2>
+
+            <input type="text" placeholder="Username" class="w-full border p-2 rounded mb-4">
+
+            <input type="password" placeholder="Password" class="w-full border p-2 rounded mb-6">
+
+            <!-- Redirect to Hero Section -->
+            <a href="#hero" class="block w-full bg-blue-600 text-white text-center py-2 rounded hover:bg-blue-700">
+                Login
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative">
+
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1600" class="w-full h-screen object-cover" alt="Hero Image">
+
+        <div class="absolute inset-0 flex justify-center items-center bg-black/50">
+            <h1 class="text-white text-5xl font-bold">
+                This is Tailwind Beginners
+            </h1>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
