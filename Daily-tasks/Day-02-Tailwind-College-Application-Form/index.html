@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Application Form</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-amber-50">
+
+    <h1 class="text-center text-4xl font-bold bg-white border border-gray-300 rounded-lg shadow-md py-4 mt-6 w-11/12 max-w-2xl mx-auto">
+        College Application Form
+    </h1>
+
+    <hr class="my-6">
+
+    <form class="max-w-3xl mx-auto bg-white shadow-lg rounded-xl p-8 border">
+
+        <div class="space-y-5 uppercase">
+
+            <div>
+                <label class="block font-semibold mb-2">First Name</label>
+                <input type="text"
+                    class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+                    required>
+            </div>
+
+            <div>
+                <label class="block font-semibold mb-2">Last Name</label>
+                <input type="text"
+                    class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500">
+            </div>
+
+            <div>
+                <label class="block font-semibold mb-2">Initials</label>
+                <input type="text"
+                    class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+                    required>
+            </div>
+
+            <div>
+                <label class="block font-semibold mb-2">Email</label>
+                <input type="email"
+                    class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+                    required>
+            </div>
+
+            <div>
+                <label class="block font-semibold mb-2">Password</label>
+                <input type="password"
+                    class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+                    required>
+            </div>
+
+            <div>
+                <label class="block font-semibold mb-2">Phone Number</label>
+                <input type="tel"
+                    class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+                    required>
+            </div>
+
+            <div>
+                <label class="block font-semibold mb-2">Gender</label>
+
+                <div class="flex gap-8">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="gender">
+                        Male
+                    </label>
+
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="gender">
+                        Female
+                    </label>
+                </div>
+            </div>
+
+            <div>
+                <label class="block font-semibold mb-2">Skills</label>
+
+                <div class="flex flex-wrap gap-6">
+
+                    <label class="flex items-center gap-2">
+                        <input type="checkbox">
+                        Java
+                    </label>
+
+                    <label class="flex items-center gap-2">
+                        <input type="checkbox">
+                        Python
+                    </label>
+
+                    <label class="flex items-center gap-2">
+                        <input type="checkbox">
+                        Web Development
+                    </label>
+
+                </div>
+            </div>
+
+            <div>
+                <label class="block font-semibold mb-2">Department</label>
+
+                <select class="w-full border rounded-lg px-3 py-2">
+                    <option>--Select Department--</option>
+                    <option>IT</option>
+                    <option>CSE</option>
+                    <option>ECE</option>
+                    <option>EEE</option>
+                    <option>MECH</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="block font-semibold mb-2">Date of Birth</label>
+                <input type="date" class="w-full border rounded-lg px-3 py-2">
+            </div>
+
+            <div>
+                <label class="block font-semibold mb-2">Time</label>
+                <input type="time" class="w-full border rounded-lg px-3 py-2">
+            </div>
+
+            <div>
+                <label class="block font-semibold mb-2">Favorite Color</label>
+                <input type="color" class="w-20 h-12 border rounded-lg">
+            </div>
+
+            <div>
+                <label class="block font-semibold mb-2">Upload File</label>
+                <input type="file" class="w-full border rounded-lg px-3 py-2">
+            </div>
+
+            <div class="flex justify-center gap-6 pt-4">
+
+                <button
+                    class="bg-green-600 hover:bg-green-700 text-white px-8 py-2 rounded-lg font-semibold transition">
+                    Register
+                </button>
+
+                <button type="reset"
+                    class="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-2 rounded-lg font-semibold transition">
+                    Reset
+                </button>
+
+            </div>
+
+        </div>
+
+    </form>
+
+</body>
+</html>
