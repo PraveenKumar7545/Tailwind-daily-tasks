@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fund Transfer</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-300">
+
+    <!-- Heading -->
+    <div class="w-3/5 mx-auto mt-5 bg-gray-200 border rounded-md p-3 text-center">
+        <h2 class="text-2xl font-bold">SBI - NEFT Transfer Charges</h2>
+    </div>
+
+    <hr class="my-5">
+
+    <!-- Form -->
+    <form class="w-3/5 mx-auto border border-white rounded-md p-6 bg-white shadow">
+
+        <!-- Select Account -->
+        <p class="font-semibold mb-3">Select Account:</p>
+
+        <table class="w-full border border-black text-center mb-6">
+            <thead class="bg-gray-100">
+                <tr>
+                    <th class="border p-2">Select</th>
+                    <th class="border p-2">Account No</th>
+                    <th class="border p-2">Type</th>
+                    <th class="border p-2">Branch</th>
+                    <th class="border p-2">Balance</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="border p-2">
+                        <input type="radio" name="account">
+                    </td>
+                    <td class="border p-2">1234567897XXXX</td>
+                    <td class="border p-2">Savings</td>
+                    <td class="border p-2">Sattur</td>
+                    <td class="border p-2">3024</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Amount -->
+        <label class="font-bold">Amount:</label>
+
+        <input
+            type="text"
+            name="amount"
+            placeholder="Enter Amount"
+            class="w-full mt-2 mb-5 border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+        <!-- Purpose -->
+        <label class="font-bold">Purpose:</label>
+
+        <select class="w-full mt-2 mb-6 border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <option>Personal</option>
+            <option>Business</option>
+        </select>
+
+        <!-- Beneficiary -->
+        <p class="font-semibold mb-3">Select Beneficiary:</p>
+
+        <table class="w-full border border-black text-center mb-6">
+            <thead class="bg-gray-100">
+                <tr>
+                    <th class="border p-2">Select</th>
+                    <th class="border p-2">Account No</th>
+                    <th class="border p-2">Beneficiary Name</th>
+                    <th class="border p-2">Branch</th>
+                    <th class="border p-2">Limit</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="border p-2">
+                        <input type="radio" name="beneficiary">
+                    </td>
+                    <td class="border p-2">9876543210XXXX</td>
+                    <td class="border p-2">Praveen Kumar M</td>
+                    <td class="border p-2">Madurai</td>
+                    <td class="border p-2">100000</td>
+                </tr>
+
+                <tr>
+                    <td class="border p-2">
+                        <input type="radio" name="beneficiary">
+                    </td>
+                    <td class="border p-2">9361797545XXXX</td>
+                    <td class="border p-2">Ranjan</td>
+                    <td class="border p-2">Kanpur</td>
+                    <td class="border p-2">250000</td>
+                </tr>
+
+                <tr>
+                    <td class="border p-2">
+                        <input type="radio" name="beneficiary">
+                    </td>
+                    <td class="border p-2">258963147XXXX</td>
+                    <td class="border p-2">Kathir</td>
+                    <td class="border p-2">Delhi</td>
+                    <td class="border p-2">60000</td>
+                </tr>
+
+                <tr>
+                    <td class="border p-2">
+                        <input type="radio" name="beneficiary">
+                    </td>
+                    <td class="border p-2">624835179XXXX</td>
+                    <td class="border p-2">Siva Suriya</td>
+                    <td class="border p-2">Nepal</td>
+                    <td class="border p-2">750000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Payment Option -->
+        <p class="font-semibold mb-2">Select Payment Option:</p>
+
+        <label class="font-bold block mb-3">Payment Option:</label>
+
+        <div class="space-y-2 mb-6">
+            <label class="block">
+                <input type="radio" name="payment" class="mr-2">
+                Pay Now
+            </label>
+
+            <label class="block">
+                <input type="radio" name="payment" class="mr-2">
+                Schedule Later
+            </label>
+
+            <label class="block">
+                <input type="radio" name="payment" class="mr-2">
+                Standing Instruction
+            </label>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex gap-4">
+            <input
+                type="submit"
+                value="Submit"
+                class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded cursor-pointer">
+
+            <input
+                type="reset"
+                value="Cancel"
+                class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded cursor-pointer">
+        </div>
+
+    </form>
+
+</body>
+</html>
