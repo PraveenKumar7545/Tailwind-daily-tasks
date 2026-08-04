@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndusInd Bank Credit Card Payment</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-300">
+
+    <!-- Heading -->
+
+    <div class="w-3/4 mx-auto mt-6">
+
+        <h1 class="bg-red-900 text-white text-3xl font-bold text-center rounded-md py-4">
+            Credit Card
+        </h1>
+
+        <h2 class="text-2xl font-semibold text-center mt-5">
+            Step 1: Provide Your IndusInd Credit Card Details
+        </h2>
+
+        <p class="text-center mt-3">
+            Please enter your IndusInd Bank Credit Card Number and Payment Amount.
+        </p>
+
+        <h2 class="text-center text-red-600 text-xl font-bold mt-5">
+            Select Card Type
+        </h2>
+
+    </div>
+
+    <!-- Form -->
+
+    <form class="bg-white w-3/4 mx-auto mt-6 rounded-lg shadow-lg p-8">
+
+        <!-- Card Selection -->
+
+        <div class="flex justify-center gap-10 mb-8">
+
+            <label class="flex items-center gap-2 cursor-pointer">
+                <input type="radio" name="card">
+                <img src="src/visa.png" class="w-24">
+            </label>
+
+            <label class="flex items-center gap-2 cursor-pointer">
+                <input type="radio" name="card">
+                <img src="src/mastercard.png" class="w-24">
+            </label>
+
+            <label class="flex items-center gap-2 cursor-pointer">
+                <input type="radio" name="card">
+                <img src="src/rupay.png" class="w-24">
+            </label>
+
+        </div>
+
+        <!-- Card Number -->
+
+        <label class="font-bold">
+            IndusInd Bank Credit Card Number
+        </label>
+
+        <div class="grid grid-cols-4 gap-4 mt-2">
+
+            <input type="number" class="border rounded p-2">
+
+            <input type="number" class="border rounded p-2">
+
+            <input type="number" class="border rounded p-2">
+
+            <input type="number" class="border rounded p-2">
+
+        </div>
+
+        <!-- Confirm Card -->
+
+        <label class="font-bold block mt-6">
+            Re-enter Credit Card Number
+        </label>
+
+        <div class="grid grid-cols-4 gap-4 mt-2">
+
+            <input type="number" class="border rounded p-2">
+
+            <input type="number" class="border rounded p-2">
+
+            <input type="number" class="border rounded p-2">
+
+            <input type="number" class="border rounded p-2">
+
+        </div>
+
+        <!-- Email -->
+
+        <label class="font-bold block mt-6">
+            Email ID
+        </label>
+
+        <input
+            type="email"
+            placeholder="Enter your email"
+            class="w-full border rounded p-2 mt-2">
+
+        <!-- Mobile -->
+
+        <label class="font-bold block mt-6">
+            Mobile Number
+        </label>
+
+        <input
+            type="tel"
+            placeholder="Enter your mobile number"
+            class="w-full border rounded p-2 mt-2">
+
+        <!-- Amount -->
+
+        <label class="font-bold block mt-6">
+            Payment Amount
+        </label>
+
+        <input
+            type="number"
+            placeholder="For example: 100000"
+            class="w-full border rounded p-2 mt-2">
+
+        <p class="text-red-600 font-bold text-center mt-6">
+            Choose your bank account below and click Submit.
+        </p>
+
+        <hr class="my-6">
+
+        <!-- Bank -->
+
+        <label class="font-bold">
+            Select Bank Account
+        </label>
+
+        <select class="w-full border rounded p-2 mt-2">
+
+            <option>-- Select Bank Option --</option>
+            <option>SBI</option>
+            <option>ICICI</option>
+            <option>HDFC</option>
+            <option>TNGB</option>
+
+        </select>
+
+        <!-- Button -->
+
+        <div class="text-center mt-8">
+
+            <button
+                class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold">
+                Submit
+            </button>
+
+        </div>
+
+    </form>
+
+</body>
+</html>
