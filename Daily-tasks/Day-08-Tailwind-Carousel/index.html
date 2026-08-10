@@ -1,0 +1,174 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Day 08 - Tailwind Image Carousel</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+
+<body class="bg-slate-100 min-h-screen flex items-center justify-center p-5">
+
+
+    <!-- ================= CAROUSEL ================= -->
+
+    <div class="relative w-full max-w-5xl h-[500px] overflow-hidden rounded-2xl shadow-2xl">
+
+
+        <!-- ================= RADIO BUTTONS ================= -->
+
+        <input
+            type="radio"
+            name="slider"
+            id="s1"
+            class="hidden peer/s1"
+            checked>
+
+        <input
+            type="radio"
+            name="slider"
+            id="s2"
+            class="hidden peer/s2">
+
+        <input
+            type="radio"
+            name="slider"
+            id="s3"
+            class="hidden peer/s3">
+
+
+        <!-- ================= SLIDES ================= -->
+
+        <div
+            class="w-full h-full flex transition-transform duration-700
+            peer-checked/s1:translate-x-0
+            peer-checked/s2:-translate-x-full
+            peer-checked/s3:-translate-x-[200%]">
+
+
+            <!-- ================= SLIDE 01 ================= -->
+
+            <div class="w-full h-full shrink-0 relative">
+
+                <img
+                    src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80"
+                    alt="Beach Sunset"
+                    class="w-full h-full object-cover">
+
+                <div
+                    class="absolute inset-0 bg-black/30 flex items-center justify-center">
+
+                    <h2
+                        class="text-white text-4xl md:text-5xl font-bold">
+                        Beach Sunset
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= SLIDE 02 ================= -->
+
+            <div class="w-full h-full shrink-0 relative">
+
+                <img
+                    src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1600&q=80"
+                    alt="Desert Dunes"
+                    class="w-full h-full object-cover">
+
+                <div
+                    class="absolute inset-0 bg-black/30 flex items-center justify-center">
+
+                    <h2
+                        class="text-white text-4xl md:text-5xl font-bold">
+                        Desert Dunes
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= SLIDE 03 ================= -->
+
+            <div class="w-full h-full shrink-0 relative">
+
+                <img
+                    src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80"
+                    alt="Mountain Landscape"
+                    class="w-full h-full object-cover">
+
+                <div
+                    class="absolute inset-0 bg-black/30 flex items-center justify-center">
+
+                    <h2
+                        class="text-white text-4xl md:text-5xl font-bold">
+                        Mountain Escape
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- ================= NAVIGATION DOTS ================= -->
+
+        <div
+            class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-10">
+
+
+            <!-- DOT 01 -->
+
+            <label
+                for="s1"
+                class="w-4 h-4 rounded-full bg-white/70
+                cursor-pointer hover:bg-amber-400
+                transition duration-300
+                peer-checked/s1:bg-amber-400">
+
+            </label>
+
+
+            <!-- DOT 02 -->
+
+            <label
+                for="s2"
+                class="w-4 h-4 rounded-full bg-white/70
+                cursor-pointer hover:bg-amber-400
+                transition duration-300
+                peer-checked/s2:bg-amber-400">
+
+            </label>
+
+
+            <!-- DOT 03 -->
+
+            <label
+                for="s3"
+                class="w-4 h-4 rounded-full bg-white/70
+                cursor-pointer hover:bg-amber-400
+                transition duration-300
+                peer-checked/s3:bg-amber-400">
+
+            </label>
+            
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
