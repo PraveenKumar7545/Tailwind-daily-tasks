@@ -1,4 +1,4 @@
-# Day 08 - Tailwind Image Carousel
+# Day 08 - Tailwind Image Carousel 
 
 A simple and responsive **Image Carousel** created using **HTML and Tailwind CSS**.
 
