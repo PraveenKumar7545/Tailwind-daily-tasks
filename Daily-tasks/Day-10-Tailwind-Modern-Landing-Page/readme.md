@@ -6,7 +6,7 @@ A responsive academic project hub landing page created using **HTML5 and Tailwin
 
 This project presents academic project services, project details, technologies, media demos, pricing information, and contact details in a modern landing-page design.
 
-## Output
+## Output Screenshots
 
 <img width="1920" height="1080" alt="Output_1" src="https://github.com/user-attachments/assets/ad20da94-55cb-40d8-8546-e232c92095fd" />
 <img width="1917" height="870" alt="Output_2" src="https://github.com/user-attachments/assets/3e2dcf09-7de0-496f-bcf0-f2debe608f04" />
