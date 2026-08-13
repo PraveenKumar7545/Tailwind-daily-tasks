@@ -1,7 +1,7 @@
 # Day 10 - Tailwind Project Hub Landing Page
 
 ## 📌 Project Overview
-
+ 
 A responsive academic project hub landing page created using **HTML5 and Tailwind CSS**.
 
 This project presents academic project services, project details, technologies, media demos, pricing information, and contact details in a modern landing-page design.
